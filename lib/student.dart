@@ -5,7 +5,7 @@ class Student{
 
     Student(this.id,this.name,[this._score=0]);
     Student.fromJson(Map<String,dynamic>json)
-        :id=json['id']
+        :id=json['id'],
         name=json['name'],
         _score=(json['score']as num).toDouble();
 
@@ -16,4 +16,5 @@ class Student{
     }
 
     bool get passed=>_score>=60;
+    String get grade=> _score>=90?'优':_score>=80?'良':_score>=70?'中':'差';
 }
