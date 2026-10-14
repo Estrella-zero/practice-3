@@ -3,3 +3,8 @@ mixin Logger{
         print('[$runtimeType] $message');
     }
 }
+mixin TimeLogger{
+  void log (String message){
+    print ( '[TimeLogger] $message' );
+    }
+}

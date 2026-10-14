@@ -1,6 +1,6 @@
 import 'student.dart';
 import 'logger.dart';
-class GradeBook with Logger{
+class GradeBook with TimeLogger,Logger{
     final List<Student>_students;
     
     GradeBook(this._students);
